@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "npx parcel build index.html --out-dir docs --public-url ./"
+    "build": "npx parcel build index.html"
   },
   "keywords": [],
   "author": "",
