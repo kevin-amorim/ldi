@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-import MontserratBold from '../public/css/fonts/Montserrat-Bold.ttf';
-import MontserratLight from '../public/css/fonts/Montserrat-Light.ttf';
-import MontserratMedium from '../public/css/fonts/Montserrat-Medium.ttf';
-import MontserratRegular from '../public/css/fonts/Montserrat-Regular.ttf';
+import MontserratBold from 'url:../public/css/fonts/Montserrat-Bold.ttf';
+import MontserratLight from 'url:../public/css/fonts/Montserrat-Light.ttf';
+import MontserratMedium from 'url:../public/css/fonts/Montserrat-Medium.ttf';
+import MontserratRegular from 'url:../public/css/fonts/Montserrat-Regular.ttf';
 
 const globalStyle = createGlobalStyle`
     :root {
