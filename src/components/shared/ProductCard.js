@@ -33,7 +33,6 @@ const BoxSVG = () => (<svg x="0px" y="0px"
 const Holder = styled.div`
     a {
         border-radius: 10px;
-        /* min-height: 350px; SE FOR USAR PREÇO+CÓDIGO */
         min-height: 325px;
         max-width: 280px;
         display: flex;
@@ -62,7 +61,6 @@ const Img = styled.img`
 `;
 
 const Name = styled.p`
-    margin-bottom: 0;
     font-size: 1.2rem;
     color: var(--primary-black);
 `;
@@ -77,12 +75,6 @@ const Details = styled.div`
     flex-direction: column;
     justify-content: space-between;
     flex: 1 0 0%;
-
-    .pronta-entrega {
-        margin: 0;
-        color: var(--success);
-        font-weight: bold;
-    }
 `;
 
 const ProductCard = (props) => {
@@ -97,8 +89,6 @@ const ProductCard = (props) => {
 
                 <Details className="p-3">
                     <Name>{name}</Name>
-                    {/* <small className="my-3 d-block">(Código {code})</small> */}
-                    {/* <Price>R$ {price}</Price> */}
                     <p className="pronta-entrega"><BoxSVG /> Pronta Entrega</p>
                 </Details>
             </Link>

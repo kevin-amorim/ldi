@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const Info = styled.div`
     background: #efefef;
     padding: 1rem;
-    max-width: 320px;
+    width: 360px;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 #cecece;
@@ -33,23 +33,23 @@ const Contact = () => (
             <p className="mb-4">Utilize uma das opções abaixo para obter mais informações ou realizar seu orçamento!</p>
 
             <div className="row justify-content-center">
-                <div className="col-12 col-lg-4 col-xl-3 mb-5">
+                <div className="col-12 col-md-auto mb-5">
                     <Info>
                         <img src={whatsappIcon} />
 
-                        <p><a href="https://api.whatsapp.com/send?phone=5522988278904" target="_blank">(22) 98827-8904</a></p>
+                        <p><a href="https://api.whatsapp.com/send?phone=5522992433029" target="_blank">(22) 99243-3029</a> | (22) 2664-2782</p>
                     </Info>
                 </div>
 
-                <div className="col-12 col-lg-4 col-xl-3 mb-5">
+                <div className="col-12 col-md-auto mb-5">
                     <Info>
                         <img src={mailIcon} />
 
-                        <p><a href="mailto:email@gmail.com.br">email@gmail.com.br</a></p>
+                        <p><a href="mailto:email@gmail.com.br">lojadoinstalador2021@gmail.com</a></p>
                     </Info>
                 </div>
 
-                <div className="col-12 col-lg-4 col-xl-3 mb-5">
+                <div className="col-12 col-md-auto mb-5">
                     <Info>
                         <img src={mapIcon} />
 

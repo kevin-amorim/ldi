@@ -59,6 +59,21 @@ const globalStyle = createGlobalStyle`
         color: var(--gray);
         letter-spacing: 2px;
     }
+
+    .pronta-entrega {
+        margin: 0;
+        color: var(--success);
+        font-weight: bold;
+    }
+
+    .img-responsive {
+        max-width: 100%;
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
 `;
 
 export default globalStyle;

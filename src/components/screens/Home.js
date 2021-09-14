@@ -2,8 +2,8 @@ import React from 'react';
 import banner from '../../../public/images/banner-home.png';
 import bannerAlarmes from '../../../public/images/banner-alarmes.png';
 import bannerCftv from '../../../public/images/banner-cftv.png';
-import bannerControles from '../../../public/images/banner-controles.png';
-import bannerRedes from '../../../public/images/banner-redes.png';
+import bannerConcertinas from '../../../public/images/banner-concertinas.jpg';
+import bannerEnergiaSolar from '../../../public/images/banner-solar.jpg';
 import bgOrcamento from '../../../public/images/bg-orcamento.png';
 import styled from 'styled-components';
 import produtos from '../../api/produtos';
@@ -163,13 +163,13 @@ const Home = () => {
                         </div>
 
                         <div className="col-auto mb-3">
-                            <img src={bannerControles} title="Controles de Acesso" alt="Controles de Acesso" />
-                            <h3>Controles de Acesso</h3>
+                            <img src={bannerConcertinas} title="Concertinas" alt="Concertinas" />
+                            <h3>Concertinas</h3>
                         </div>
 
                         <div className="col-auto mb-3">
-                            <img src={bannerRedes} title="Redes" alt="Redes" />
-                            <h3>Redes</h3>
+                            <img src={bannerEnergiaSolar} title="Energia Solar" alt="Energia Solar" />
+                            <h3>Energia Solar</h3>
                         </div>
                     </div>
                 </HolderCategorias>
@@ -201,7 +201,7 @@ const Home = () => {
                     <h2 className="title title-white text-center mb-5">Solicite o seu orçamento!</h2>
 
                     <div className="text-center">
-                        <ButtonOrcamento href="https://api.whatsapp.com/send?phone=5522988278904" target="_blank">
+                        <ButtonOrcamento href="https://api.whatsapp.com/send?phone=5522992433029" target="_blank">
                             Clique aqui!
                         </ButtonOrcamento>
                     </div>

@@ -106,12 +106,12 @@ const routes = [
         url: '/produtos',
         inner: true,
     },
-    {
-        key: 'catalogo',
-        name: 'Catálogo Completo',
-        url: 'https://www.meucomercio.com.br/lojadoinstaladorsegurancaeletronica',
-        inner: false,
-    },
+    // {
+    //     key: 'catalogo',
+    //     name: 'Catálogo Completo',
+    //     url: 'https://www.meucomercio.com.br/lojadoinstaladorsegurancaeletronica',
+    //     inner: false,
+    // },
     {
         key: 'contato',
         name: 'Contato',
@@ -142,14 +142,16 @@ const Nav = () => {
                             <div className="col-auto">
                                 <p>
                                     <b className="d-block">E-mail</b>
-                                    contato@lojadoinstalador.com.br
+                                    lojadoinstalador2021@gmail.com
                                 </p>
                             </div>
 
                             <div className="col-auto">
                                 <p>
                                     <b className="d-block">Telefone</b>
-                                    (22) 98827-8904
+                                    (22) 99243-3029
+                                    <br/>
+                                    (22) 2664-2782
                                 </p>
                             </div>
 

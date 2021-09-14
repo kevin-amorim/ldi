@@ -63,6 +63,8 @@ const Produtos = () => {
                         <span onClick={() => setCurrentCategory('cftv')}>CFTV</span>
                         <span onClick={() => setCurrentCategory('automatizadores')}>Automatizadores</span>
                         <span onClick={() => setCurrentCategory('alarmes')}>Alarmes</span>
+                        <span onClick={() => setCurrentCategory('someimagem')}>Som e Imagem</span>
+                        <span onClick={() => setCurrentCategory('interfonia')}>Interfonia</span>
                     </HolderFiltros>
                 </div>
 
