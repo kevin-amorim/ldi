@@ -6,7 +6,7 @@ import bannerConcertinas from '../../../public/images/banner-concertinas.jpg';
 import bannerEnergiaSolar from '../../../public/images/banner-solar.jpg';
 import bgOrcamento from '../../../public/images/bg-orcamento.png';
 import styled from 'styled-components';
-import produtos from '../../api/produtos';
+import { getShowcaseProducts } from '../../api/controllers/ProductController';
 import ProductCard from '../shared/ProductCard';
 import { Link } from 'react-router-dom';
 
@@ -44,6 +44,7 @@ const Banner = styled.div`
 
     @media (max-width: 550px) {
         h1 {
+            max-width: 85%;
             font-size: 3rem;
         }
     }
@@ -112,28 +113,25 @@ const HolderCategorias = styled.div`
 
 const Home = () => {
     const renderProducts = () => {
-        let count = 1;
-        let products = [];
+        let products = getShowcaseProducts(['24', '25', '14', '4']);
 
-        for (let id in produtos) {
-            let produto = produtos[id];
+        if (products.length > 0) {
+            let showcase = [];
 
-            products.push(
-                <div key={id} className="col-12 col-md-3">
-                    <ProductCard
-                        info={produto}
-                    />
-                </div>
-            );
-
-            count++;
-
-            if (count > 4) {
-                break;
-            }
-        };
-
-        return products;
+            for (let id in products) {
+                let produto = products[id];
+    
+                showcase.push(
+                    <div key={id} className="col-12 col-md-3">
+                        <ProductCard
+                            info={produto}
+                        />
+                    </div>
+                );
+            };
+    
+            return showcase;
+        }
     }
 
     return (

@@ -9,3 +9,9 @@ export const getProductById = (id) => {
 
     return produto;
 }
+
+export const getShowcaseProducts = (ids) => {
+    let produtosShowcase = produtos.filter((produto) => ids.indexOf(produto.id) > -1);
+
+    return produtosShowcase;
+}

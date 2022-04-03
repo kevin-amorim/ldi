@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const BoxSVG = () => (<svg x="0px" y="0px" 
     width="25px" viewBox="0 0 64 64" fill="green" enableBackground="new 0 0 64 64">
@@ -52,7 +53,7 @@ const Holder = styled.div`
     }
 `;
 
-const Img = styled.img`
+const Img = styled(LazyLoadImage)`
     width: 100%;
     height: 170px;
     object-fit: cover;
@@ -65,11 +66,6 @@ const Name = styled.p`
     color: var(--primary-black);
 `;
 
-const Price =  styled.p`
-    font-size: 1.2rem;
-    margin: 0;
-`;
-
 const Details = styled.div`
     display: flex;
     flex-direction: column;
@@ -78,13 +74,20 @@ const Details = styled.div`
 `;
 
 const ProductCard = (props) => {
-    let { id, name, code, price, img } = props.info;
+    let { id, name, img, scrollPosition } = props.info;
 
     return (
         <Holder className="mb-4">
             <Link to={`/produtos/${id}`}>
                 <div style={{overflow: 'hidden'}}>
-                    <Img src={img} title={name} />
+                    <Img 
+                        src={img} 
+                        title={name} 
+                        alt={name} 
+                        height="170px"
+                        width="100%"
+                        scrollPosition={scrollPosition}
+                    />
                 </div>
 
                 <Details className="p-3">

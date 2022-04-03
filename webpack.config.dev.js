@@ -2,20 +2,17 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-const port = process.env.PORT || 3000;
-
 module.exports = {
-    mode: 'development',
     entry: {
         app: path.resolve(__dirname, './src/index.js')
     },
+    devtool: 'inline-source-map',
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         publicPath: '/'
     },
-    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -51,12 +48,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'public/index.html',
+            template: __dirname + '/src/index.html',
+            filename: 'index.html',
+            inject: 'body'
         })
     ],
     devServer: {
         host: 'localhost',
-        port: port,
+        port: process.env.PORT || 3000,
         historyApiFallback: true,
         hot: true
     }

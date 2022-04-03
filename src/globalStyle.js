@@ -74,6 +74,10 @@ const globalStyle = createGlobalStyle`
     a {
         text-decoration: none;
     }
+
+    body {
+        height: 100%;
+    }
 `;
 
 export default globalStyle;
