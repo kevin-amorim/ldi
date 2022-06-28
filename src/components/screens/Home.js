@@ -4,6 +4,7 @@ import bannerAlarmes from '../../../public/images/banner-alarmes.png';
 import bannerCftv from '../../../public/images/banner-cftv.png';
 import bannerConcertinas from '../../../public/images/banner-concertinas.jpg';
 import bannerEnergiaSolar from '../../../public/images/banner-solar.jpg';
+import bannerColorVu from '../../../public/images/banner-camera-colorvu.jpg';
 import bgOrcamento from '../../../public/images/bg-orcamento.png';
 import styled from 'styled-components';
 import { getShowcaseProducts } from '../../api/controllers/ProductController';
@@ -181,8 +182,14 @@ const Home = () => {
                         {renderProducts()}
                     </div>
 
-                    <div className="text-center">
-                        <Link to={'/produtos'} style={{color: 'var(--secondary-red)', fontSize: '1.2rem'}}>Ver todos os produtos</Link>
+                    <div className="text-center mb-4">
+                        <Link to={'/produtos'} style={{color: 'var(--secondary-red)', fontSize: '1.2rem', fontWeight: 'bold'}}>Ver todos os produtos</Link>
+                    </div>
+
+                    <div className="text-center pt-3">
+                        <Link to={'/produtos'}>
+                            <img src={bannerColorVu} title="Câmeras HikVision ColorVu" className="img-responsive" style={{margin: '0 auto'}} />
+                        </Link>
                     </div>
                 </div>
             </div>

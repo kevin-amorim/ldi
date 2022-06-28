@@ -543,6 +543,22 @@ const produtos = [
         category: 'automatizadores',
         description: null
     },
+    {
+        id: '69',
+        name: 'CAMERA HIKVISION BULLET ColorVu',
+        code: '',
+        img: './images/products/camera-hikvision-bullet-colorvu-DS2CE10DF0TPF.jpg',
+        category: 'cftv',
+        description: null
+    },
+    {
+        id: '70',
+        name: 'CAMERA HIKVISION DOME ColorVu FULL HD',
+        code: '',
+        img: './images/products/camera-colorvu-hikvision-fhd-ds-2ce70df0t.jpg',
+        category: 'cftv',
+        description: null
+    },
 ];
 
 export default produtos;
